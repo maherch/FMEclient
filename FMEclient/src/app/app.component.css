@@ -1,0 +1,26 @@
+body{
+
+}
+
+.demo-card-wide.mdl-card {
+
+
+
+}
+.backtrans{
+  background-color: black;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 300px;
+
+
+  background: url('../../img/ftmf.png') center no-repeat;
+  background-size: 65%;
+
+}
+
+
+.demo-card-wide > .mdl-card__menu {
+  color: black;
+}
