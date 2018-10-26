@@ -1,0 +1,103 @@
+<p>
+  players works!
+
+
+</p>
+
+  <div>
+
+    <label> licenseNumber:
+      <input #licenseNumber />
+    </label>
+    <br/>
+    <label> firstName:
+      <input #firstName />
+    </label>
+    <br/>
+    <label> lastName:
+      <input #lastName />
+    </label>
+    <br/>
+
+    <label> squadNumber:
+      <input #squadNumber />
+    </label>
+    <br/>
+    <label> natIdNum:
+      <input #natIdNum />
+    </label>
+    <br/>
+    <label> adress:
+      <input #adress />
+    </label>
+    <br/>
+    <label> phone:
+      <input #phone />
+    </label>
+    <br/>
+    <label> mailAdress:
+    <input #mailAdress />
+  </label>
+    <br/>
+    <label> height:
+      <input #height />
+    </label>
+    <br/>
+    <label> weight:
+      <input #weight />
+    </label>
+    <br/>
+    <label> birthdate:
+      <input #birthdate />
+    </label>
+    <br/>
+    <label> actualTeamId:
+      <input #actualTeamId />
+    </label>
+    <br/>
+    <label> previousTeamId:
+      <input #previousTeamId />
+    </label>
+    <br/>
+    <label> nationality:
+      <input #nationality />
+    </label>
+    <br/>
+    <label> category:
+      <input #category />
+    </label>
+    <br/>
+    <label> photoUrl:
+      <input #photoUrl />
+    </label>
+    <br/>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(
+  0,
+  licenseNumber.value,
+  firstName.value,
+  lastName.value,
+  squadNumber.value,
+  natIdNum.value,
+  adress.value,
+  phone.value,
+  mailAdress.value,
+  height.value,
+  weight.value,
+  birthdate.value,
+  actualTeamId.value,
+  previousTeamId.value,
+  nationality.value,
+  category.value,
+  photoUrl.value); ">
+      add
+    </button>
+  </div>
+<div>
+<ul class="players">
+  <li *ngFor="let player of players">
+      <span class="badge">{{player.id}}</span> {{player.firstName}}
+    <button class="delete" title="delete player">x</button>
+  </li>
+</ul>
+</div>
