@@ -3,18 +3,30 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import {RouterModule} from "@angular/router";
+import {RouterModule} from '@angular/router';
+import { PlayersComponent } from './players/players.component';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    PlayersComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([{
       path : '',
-      component:LoginComponent
+      component: LoginComponent
+
+    },
+      {
+      path : 'player',
+      component: PlayersComponent
+
     }])
   ],
   providers: [],
