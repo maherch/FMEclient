@@ -1,0 +1,58 @@
+<mat-form-field class="example-full-width">
+  <input #nom matInput placeholder="Nom*">
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input #prenom matInput placeholder="prenom*">
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input #datenaiss matInput placeholder="date de naissance*">
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input #nationalite matInput placeholder="Nationnalité*">
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input #adresse matInput placeholder="Adresse*">
+</mat-form-field>
+
+<br>
+<mat-form-field class="example-full-width">
+  <input #tel matInput placeholder="N° de téléphone*">
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input #ncin matInput placeholder="N° CIN*">
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input #email matInput placeholder="Email">
+</mat-form-field>
+<br>
+<mat-form-field class="example-full-width">
+  <input #fonction matInput placeholder="Fonction">
+</mat-form-field>
+<br>
+
+<mat-form-field class="example-full-width">
+  <input #photo matInput placeholder="photo">
+</mat-form-field>
+<br>
+
+<button mat-raised-button color="primary" (click)="add(
+adresse.value,
+datenaiss.value,
+prenom.value,
+fonction.value,
+nom.value,
+email.value,
+ncin.value,
+nationalite.value,
+tel.value,
+photo.value)">Enregistrer </button>
+<button mat-raised-button color="primary">Annuler </button>
+
+
+

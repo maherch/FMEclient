@@ -11,12 +11,14 @@ export class LoginComponent implements OnInit {
 
 name:string='';
 pass:string='';
-exist:boolean;
+exist:boolean=false;
 
   ngOnInit() {
+
   }
 
   constructor(private httpclient:HttpClient){}
+
   onNameKeyup(event:any){
     this.name=event.target.value;
 
@@ -27,8 +29,8 @@ exist:boolean;
   }
 
   title = 'testapp';
+
   getprofile(){
-    console.log(this.name);
     this.httpclient.get('http://localhost:8081/accounts').subscribe(
       (data:any[])=>
       {

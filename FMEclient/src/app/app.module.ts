@@ -5,12 +5,13 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import {RouterModule} from "@angular/router";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MaterielModule} from "./materiel.module";
-
+import {MaterielModule} from "./MaterielModule";
+import { AddResponsableComponent } from './Components/AddResponsable/add-responsable/add-responsable.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    AddResponsableComponent,
   ],
   imports: [
     BrowserModule,
